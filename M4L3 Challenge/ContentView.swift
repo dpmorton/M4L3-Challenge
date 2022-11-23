@@ -22,9 +22,9 @@ struct ContentView: View {
                     }
                 }
             
-            Button("This is Tab 2.\nTake me to Tab 3") {
-                tabIndex = 3
-            }
+            Button("This is Tab's tag is  \(tabIndex).\nTake me to Tab 3") {
+                    tabIndex = 3
+                    }
                 .tag(2)
                 .tabItem {
                     VStack{
@@ -35,8 +35,9 @@ struct ContentView: View {
                
          //   Text("This is Tab \(tabIndex)")
             List {
+                Text("This is Tab's tag is \(tabIndex)")
                 ForEach(0..<100) { _ in
-                    Text("This is tab 3!")
+                    Text("This is Tab 3!")
                 }
             }
                 .tag(3)
@@ -46,6 +47,7 @@ struct ContentView: View {
                         Text("Tab 3")
                     }
                 }
+            
         }
     }
 }
