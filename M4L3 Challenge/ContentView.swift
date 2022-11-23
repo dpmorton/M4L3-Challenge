@@ -22,7 +22,7 @@ struct ContentView: View {
                     }
                 }
             
-            Button("This is Tab's tag is  \(tabIndex).\nTake me to Tab 3") {
+            Button("This Tab's tag is  \(tabIndex).\nTake me to Tab 3") {
                     tabIndex = 3
                     }
                 .tag(2)
@@ -35,7 +35,7 @@ struct ContentView: View {
                
          //   Text("This is Tab \(tabIndex)")
             List {
-                Text("This is Tab's tag is \(tabIndex)")
+                Text("This Tab's tag is \(tabIndex)")
                 ForEach(0..<100) { _ in
                     Text("This is Tab 3!")
                 }
